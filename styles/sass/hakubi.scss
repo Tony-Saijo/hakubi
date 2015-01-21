@@ -1,0 +1,89 @@
+/* Hakubi - A Simple CSS Framework with Crisp, Modern Styling ver (0.1.0) */
+
+
+/* Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,100italic,300italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+
+//Variations of Lato font for Hakubi
+$hakubi-sans: "Lato", sans-serif;
+$hakubi-serif:"Vollkorn", serif; 
+
+// Mixins for common styles
+@mixin header-style {
+	
+	font-family: $hakubi-sans;
+	font-weight: 100;
+	color: $color-text;
+}
+
+@mixin column-width($width) {
+	float: left; 
+	width: $width;
+	
+}
+
+
+/* Hakubi Color Pallete */
+$color-background:#7D8A2E; /* Trendy Green */
+$color-background-alt1:#FF8598; /* Pink Sherbet */
+$color-background-alt2:#996E5C; /* Dark Chestnut */
+$color-background-alt3:#8FB299; /* Summer Green */
+$color-text: #B2A1A1; /* Cloudy (Darken 30% for greater results with certain bgs) */
+$color-text-alt1:#A1ACB2; /* Gull Grey */
+$color-alert:#FFFFE5; /* Light Yellow */
+$color-alert-text: #9C515D; /* Vin Rouge */
+$color-accent:#C9D787; /* Medium Spring Bud */
+$color-accent-alt1:#FFC0A9; /* Melon */
+
+
+/* Grid Variables */
+$pad: 20px;
+
+
+
+h1 {
+
+@include header-style;	
+
+}
+
+
+
+col-1-3 {
+
+@include column-width(33.3%)
+	
+}
+
+
+col-2-3 {
+
+@include column-width(66.6%)
+
+}
+
+
+
+col-1-2 {
+
+@include column-width(50%)
+
+}
+
+
+col-1-4 {
+	
+@include column-width(25%)
+
+}
+
+
+col-1-8 {
+	
+@include column-width(12.8%)
+
+}
+
+
+
