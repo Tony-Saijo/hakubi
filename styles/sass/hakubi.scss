@@ -23,6 +23,15 @@ $hakubi-serif:"Vollkorn", serif;
 	
 }
 
+@mixin box-sizing($border-box){
+	
+  -webkit-box-sizing: $border-box;
+  -moz-box-sizing: $border-box;
+  box-sizing: $border-box;
+	
+	
+}
+
 
 /* Hakubi Color Pallete */
 $color-background:#7D8A2E; /* Trendy Green */
@@ -85,5 +94,33 @@ col-1-8 {
 
 }
 
+// Clearing Context 
 
+.grid {
+	background: $color-accent-alt1;
+	margin: 0 0 $pad 0; 
+	
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
 
+// Padding to the last element 
+
+[class*='col-'] {
+  float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+//Opt-in padding outside 
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}

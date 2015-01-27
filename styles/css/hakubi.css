@@ -14,39 +14,70 @@
 /* Medium Spring Bud */
 /* Melon */
 /* Grid Variables */
-/* line 45, ../sass/hakubi.scss */
+/* line 54, ../sass/hakubi.scss */
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   color: #b2a1a1;
 }
 
-/* line 53, ../sass/hakubi.scss */
+/* line 62, ../sass/hakubi.scss */
 col-1-3 {
   float: left;
   width: 33.3%;
 }
 
-/* line 60, ../sass/hakubi.scss */
+/* line 69, ../sass/hakubi.scss */
 col-2-3 {
   float: left;
   width: 66.6%;
 }
 
-/* line 68, ../sass/hakubi.scss */
+/* line 77, ../sass/hakubi.scss */
 col-1-2 {
   float: left;
   width: 50%;
 }
 
-/* line 75, ../sass/hakubi.scss */
+/* line 84, ../sass/hakubi.scss */
 col-1-4 {
   float: left;
   width: 25%;
 }
 
-/* line 82, ../sass/hakubi.scss */
+/* line 91, ../sass/hakubi.scss */
 col-1-8 {
   float: left;
   width: 12.8%;
+}
+
+/* line 99, ../sass/hakubi.scss */
+.grid {
+  background: #ffc0a9;
+  margin: 0 0 20px 0;
+}
+/* line 103, ../sass/hakubi.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 112, ../sass/hakubi.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+}
+/* line 115, ../sass/hakubi.scss */
+.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+/* line 121, ../sass/hakubi.scss */
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+/* line 123, ../sass/hakubi.scss */
+.grid-pad [class*='col-']:last-of-type {
+  padding-right: 20px;
 }
